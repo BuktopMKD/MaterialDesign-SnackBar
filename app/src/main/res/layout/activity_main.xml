@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/simpleSnackBar"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Simple snackbar"
+        app:layout_constraintEnd_toEndOf="@id/buttonSnackBar"
+        app:layout_constraintStart_toStartOf="@id/buttonSnackBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSnackBar"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="button snackbar"
+        app:layout_constraintEnd_toEndOf="@id/customSnackBar"
+        app:layout_constraintStart_toStartOf="@id/customSnackBar"
+        app:layout_constraintTop_toBottomOf="@id/simpleSnackBar" />
+
+    <Button
+        android:id="@+id/customSnackBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSnackBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="by Viktor Jovanovski"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
